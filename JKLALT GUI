@@ -9,6 +9,7 @@ local IMAGE = Instance.new("ImageLabel")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel2 = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
 local R6AVATAR = Instance.new("TextButton")
 
 --Properties :
@@ -64,6 +65,20 @@ TextLabel2.TextColor3 = Color3.fromRGB(242, 243, 243)
 TextLabel2.TextScaled = true
 TextLabel2.TextSize = 14.000
 TextLabel2.TextWrapped = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 3
+TextLabel.Position = UDim2.new(0.20, 0, 0.08, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 35)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Made by JKLO TEAM DEVELOPER or k00paz#0"
+TextLabel.TextColor3 = Color3.fromRGB(242, 243, 243)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
 
 R6AVATAR.Parent = Frame
 R6AVATAR.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -128,6 +143,39 @@ end
 coroutine.wrap(QFCS_fake_script)()
 local function PKIPWI_fake_script() -- TextLabel2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel2)
+
+	while true do
+    script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
+    for i = 0,255,10 do
+        wait()
+        script.Parent.TextColor3 = Color3.new(255/255,i/255,0/255)
+    end
+    for i = 255,0,-10 do
+        wait()
+        script.Parent.TextColor3 = Color3.new(i/255,255/255,0/255)
+    end
+    for i = 0,255,10 do
+        wait()
+        script.Parent.TextColor3 = Color3.new(0/255,255/255,i/255)
+    end
+    for i = 255,0,-10 do
+        wait()
+        script.Parent.TextColor3 = Color3.new(0/255,i/255,255/255)
+    end
+    for i = 0,255,10 do
+        wait()
+        script.Parent.TextColor3 = Color3.new(i/255,0/255,255/255)
+    end
+    for i = 255,0,-10 do
+        wait()
+        script.Parent.TextColor3 = Color3.new(255/255,0/255,i/255)
+    end
+end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+
+local function PKIPWI_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
 
 	while true do
     script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
