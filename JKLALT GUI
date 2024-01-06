@@ -106,7 +106,7 @@ local Lighting = game:GetService("Lighting")
 		while wait(0.1) do 
 			ColorCorrection.TintColor = Color3.fromHSV(zigzag(Counter),1,1)
 			Lighting.Ambient = Color3.fromHSV(zigzag(Counter),1,1)
-			Counter += 0.01
+			Counter += 0.05
 		end
 end)
 HINTGAME.Parent = Frame
