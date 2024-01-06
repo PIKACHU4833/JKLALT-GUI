@@ -16,6 +16,7 @@ local MUSIC = Instance.new("TextButton")
 local CHATALL = Instance.new("TextButton")
 local DECAL = Instance.new("TextButton")
 local JUMPSCARE = Instance.new("TextButton")
+local NEWFACE = Instance.new("TextButton")
 
 --Properties :
 
@@ -297,6 +298,31 @@ for i,v in pairs(game.Players:GetPlayers()) do
 			end)
 		end
 	end
+end)
+NEWFACE.Parent = TextLabel_3
+NEWFACE.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NEWFACE.BorderColor3 = Color3.fromRGB(196, 40, 28)
+NEWFACE.BorderSizePixel = 3
+NEWFACE.Position = UDim2.new(0.38, 0, 06, 0)
+NEWFACE.Size = UDim2.new(0, 83, 0, 30)
+NEWFACE.Font = Enum.Font.SourceSans
+NEWFACE.Text = "y00nkidd FACE"
+NEWFACE.TextColor3 = Color3.fromRGB(242, 243, 243)
+NEWFACE.TextScaled = true
+NEWFACE.TextSize = 14.000
+NEWFACE.TextWrapped = true
+NEWFACE.MouseButton1Down:connect(function()
+local player = game:GetService("Players").LocalPlayer
+gui1 = Instance.new("BillboardGui", player.Character.Head)
+gui1.Size=UDim2.new(2.5,0,2.5,0)
+gui1.StudsOffset=Vector3.new(0,0,0)
+gui1.AlwaysOnTop = true
+text1=Instance.new("ImageLabel")
+text1.Image = "http://www.roblox.com/asset/?id=15877893828"
+text1.Size=UDim2.new(1,0,1,0)
+text1.Position=UDim2.new(0,0,0,0)
+text1.BackgroundTransparency = 1
+text1.Parent=gui1
 end)
 
 -- Script:
