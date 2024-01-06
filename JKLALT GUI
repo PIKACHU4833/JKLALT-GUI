@@ -397,9 +397,9 @@ end)
 MESSAGESPAM.Parent = Frame
 MESSAGESPAM.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 MESSAGESPAM.Rotation = -25
-MESSAGESPAM.BorderColor3 = Color3.fromRGB(242, 243, 243)
+MESSAGESPAM.BorderColor3 = Color3.fromRGB(196, 40, 28)
 MESSAGESPAM.BorderSizePixel = 3
-MESSAGESPAM.Position = UDim2.new(-1.04, 0, 0.1, 0)
+MESSAGESPAM.Position = UDim2.new(-0.27, 0, 0.1, 0)
 MESSAGESPAM.Size = UDim2.new(0, 80, 0, 35)
 MESSAGESPAM.Font = Enum.Font.SourceSans
 MESSAGESPAM.Text = "MESSAGE SPAM"
