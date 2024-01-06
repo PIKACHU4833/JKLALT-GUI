@@ -13,6 +13,7 @@ local DISCO = Instance.new("TextButton")
 local HINTGAME = Instance.new("TextButton")
 local SKYBOX = Instance.new("TextButton")
 local MUSIC = Instance.new("TextButton")
+local CHATALL = Instance.new("TextButton")
 
 --Properties :
 
@@ -161,7 +162,7 @@ MUSIC.Parent = Frame
 MUSIC.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 MUSIC.BorderColor3 = Color3.fromRGB(196, 40, 28)
 MUSIC.BorderSizePixel = 3
-MUSIC.Position = UDim2.new(0.68, 0, 0.2, 0)
+MUSIC.Position = UDim2.new(0.08, 0, 0.4, 0)
 MUSIC.Size = UDim2.new(0, 100, 0, 35)
 MUSIC.Font = Enum.Font.SourceSans
 MUSIC.Text = "MUSIC"
@@ -176,7 +177,24 @@ Spooky = Instance.new("Sound", game.Workspace)
 		Spooky.Looped = true
 		Spooky:Play()
 end)
-
+CHATALL.Parent = Frame
+CHATALL.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHATALL.BorderColor3 = Color3.fromRGB(196, 40, 28)
+CHATALL.BorderSizePixel = 3
+CHATALL.Position = UDim2.new(0.38, 0, 0.4, 0)
+CHATALL.Size = UDim2.new(0, 78, 0, 35)
+CHATALL.Font = Enum.Font.SourceSans
+CHATALL.Text = "CHAT ALL"
+CHATALL.TextColor3 = Color3.fromRGB(242, 243, 243)
+CHATALL.TextScaled = true
+CHATALL.TextSize = 14.000
+CHATALL.TextWrapped = true
+CHATALL.MouseButton1Down:connect(function()
+while wait(0) do
+for i,v in pairs(game.Players:GetChildren()) do 
+game:GetService("Chat"):Chat(v.Character.Head,"TEAM JKLO JOIN TODAY!") 
+end
+end)
 -- Script:
 
 local function QFCS_fake_script() -- Frame.Dragify 
