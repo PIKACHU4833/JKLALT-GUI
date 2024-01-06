@@ -11,6 +11,8 @@ local TextLabel = Instance.new("TextLabel")
 local R6AVATAR = Instance.new("TextButton")
 local DISCO = Instance.new("TextButton")
 local HINTGAME = Instance.new("TextButton")
+local SKYBOX = Instance.new("TextButton")
+local MUSIC = Instance.new("TextButton")
 
 --Properties :
 
@@ -104,11 +106,11 @@ local Lighting = game:GetService("Lighting")
 			Counter += 0.01
 		end
 end)
-HINTGAME.Parent = TextLabel_3
+HINTGAME.Parent = Frame
 HINTGAME.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 HINTGAME.BorderColor3 = Color3.fromRGB(196, 40, 28)
 HINTGAME.BorderSizePixel = 3
-HINTGAME.Position = UDim2.new(0.38, 0, 0.40, 0)
+HINTGAME.Position = UDim2.new(0.38, 0, 0.2, 0)
 HINTGAME.Size = UDim2.new(0, 80, 0, 35)
 HINTGAME.Font = Enum.Font.SourceSans
 HINTGAME.Text = "FAST HINT"
@@ -130,6 +132,49 @@ local h = Instance.new("Hint")
 h.Text = "Te4M J4l0 g04T T0d4y$!$!$!$!$!$"
 h.Parent = workspace
 end
+end)
+SKYBOX.Parent = Frame
+SKYBOX.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SKYBOX.BorderColor3 = Color3.fromRGB(196, 40, 28)
+SKYBOX.BorderSizePixel = 3
+SKYBOX.Position = UDim2.new(0.68, 0, 0.2, 0)
+SKYBOX.Size = UDim2.new(0, 100, 0, 35)
+SKYBOX.Font = Enum.Font.SourceSans
+SKYBOX.Text = "SKYBOX"
+SKYBOX.TextColor3 = Color3.fromRGB(242, 243, 243)
+SKYBOX.TextScaled = true
+SKYBOX.TextSize = 14.000
+SKYBOX.TextWrapped = true
+SKYBOX.MouseButton1Down:connect(function()
+s = Instance.new("Sky")
+		s.Name = "SKY"
+		s.SkyboxBk = "rbxassetid://15866619293"
+		s.SkyboxDn = "rbxassetid://15866619293"
+		s.SkyboxFt = "rbxassetid://15866619293"
+		s.SkyboxLf = "rbxassetid://15866619293"
+		s.SkyboxRt = "rbxassetid://15866619293"
+                s.SkyboxUp = "rbxassetid://15866619293"
+                s.Parent = game.Lighting
+wait()
+end)
+MUSIC.Parent = Frame
+MUSIC.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MUSIC.BorderColor3 = Color3.fromRGB(196, 40, 28)
+MUSIC.BorderSizePixel = 3
+MUSIC.Position = UDim2.new(0.68, 0, 0.2, 0)
+MUSIC.Size = UDim2.new(0, 100, 0, 35)
+MUSIC.Font = Enum.Font.SourceSans
+MUSIC.Text = "MUSIC"
+MUSIC.TextColor3 = Color3.fromRGB(242, 243, 243)
+MUSIC.TextScaled = true
+MUSIC.TextSize = 14.000
+MUSIC.TextWrapped = true
+MUSIC.MouseButton1Down:connect(function()
+Spooky = Instance.new("Sound", game.Workspace)
+		Spooky.Name = "Spooky"
+		Spooky.SoundId = "rbxassetid://6942391979"
+		Spooky.Looped = true
+		Spooky:Play()
 end)
 
 -- Script:
