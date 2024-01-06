@@ -18,10 +18,14 @@ local DECAL = Instance.new("TextButton")
 local JUMPSCARE = Instance.new("TextButton")
 local NEWFACE = Instance.new("TextButton")
 
--- Instances:
+-- Instances right:
 
 local Chicken = Instance.new("TextButton")
 local meshdisco = Instance.new("TextButton")
+
+-- Instances left:
+
+local MESSAGESPAM = Instance.new("TextButton")
 
 --Properties :
 
@@ -52,7 +56,7 @@ TextLabel2.BackgroundTransparency = 1
 TextLabel2.Position = UDim2.new(0.15, 0, 0, 0)
 TextLabel2.Size = UDim2.new(0, 241, 0, 30)
 TextLabel2.Font = Enum.Font.SourceSans
-TextLabel2.Text = "Y00nkidd GUI V1"
+TextLabel2.Text = "Y00nk1DD Gu1 V¹"
 TextLabel2.TextColor3 = Color3.fromRGB(242, 243, 243)
 TextLabel2.TextScaled = true
 TextLabel2.TextSize = 14.000
@@ -66,7 +70,7 @@ TextLabel.BorderSizePixel = 3
 TextLabel.Position = UDim2.new(0.20, 0, 0.08, 0)
 TextLabel.Size = UDim2.new(0, 200, 0, 35)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Made by JKLO TEAM DEVELOPER or k00paz#0"
+TextLabel.Text = "M4de By JkL0_tE4m dEvE10pER 0r k00paz#0 14anz#5358 4nD bossjklo_3#0 !$!$!$"
 TextLabel.TextColor3 = Color3.fromRGB(242, 243, 243)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -389,6 +393,27 @@ ll.Parent.BrickColor = BrickColor.Random()
 rl.MeshType = meshes[math.random(1,#meshes)]
 rl.Parent.BrickColor = BrickColor.Random()
 end
+end)
+MESSAGESPAM.Parent = Frame
+MESSAGESPAM.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MESSAGESPAM.Rotation = -25
+MESSAGESPAM.BorderColor3 = Color3.fromRGB(242, 243, 243)
+MESSAGESPAM.BorderSizePixel = 3
+MESSAGESPAM.Position = UDim2.new(-1.04, 0, 0.1, 0)
+MESSAGESPAM.Size = UDim2.new(0, 80, 0, 35)
+MESSAGESPAM.Font = Enum.Font.SourceSans
+MESSAGESPAM.Text = "MESSAGE SPAM"
+MESSAGESPAM.TextColor3 = Color3.fromRGB(242, 243, 243)
+MESSAGESPAM.TextScaled = true
+MESSAGESPAM.TextSize = 14.000
+MESSAGESPAM.TextWrapped = true
+MESSAGESPAM.MouseButton1Down:connect(function()
+while wait(0.4) do
+       msg = Instance.new("Message",workspace)
+       msg.Text = "G3t h4cK By Y0onK1dd LmF4OOOOOOOOO!$?$!$!$"
+       wait(0.4)
+       msg:Destroy()
+   end
 end)
 
 -- Script:
