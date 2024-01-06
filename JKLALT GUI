@@ -6,12 +6,11 @@
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local IMAGE = Instance.new("ImageLabel")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel2 = Instance.new("TextLabel")
 local TextLabel = Instance.new("TextLabel")
 local R6AVATAR = Instance.new("TextButton")
 local DISCO = Instance.new("TextButton")
+local HINTGAME = Instance.new("TextButton")
 
 --Properties :
 
@@ -33,25 +32,6 @@ IMAGE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 IMAGE.BorderSizePixel = 3
 IMAGE.Size = UDim2.new(0, 356, 0, 300)
 IMAGE.Image = "rbxassetid://15866619293"
-
-ScrollingFrame.Parent = Frame
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundTransparency = 1
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
-ScrollingFrame.Position = UDim2.new(0.02, 0, 0.08, 0)
-ScrollingFrame.Size = UDim2.new(0, 343, 0, 270)
-
-TextLabel_3.Parent = ScrollingFrame
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0, 0, 0, 0)
-TextLabel_3.Size = UDim2.new(0, 356, 0, 354)
-TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = ""
-TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.TextSize = 14.000
 
 TextLabel2.Parent = Frame
 TextLabel2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -96,12 +76,12 @@ R6AVATAR.TextWrapped = true
 R6AVATAR.MouseButton1Down:connect(function()
 
 end)
-DISCO.Parent = TextLabel_3
+DISCO.Parent = Frame
 DISCO.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 DISCO.BorderColor3 = Color3.fromRGB(196, 40, 28)
 DISCO.BorderSizePixel = 3
-DISCO.Position = UDim2.new(0.08, 0, 0.15, 0)
-DISCO.Size = UDim2.new(0, 75, 0, 35)
+DISCO.Position = UDim2.new(0.08, 0, 0.2, 0)
+DISCO.Size = UDim2.new(0, 80, 0, 35)
 DISCO.Font = Enum.Font.SourceSans
 DISCO.Text = "DISCO"
 DISCO.TextColor3 = Color3.fromRGB(242, 243, 243)
@@ -123,6 +103,33 @@ local Lighting = game:GetService("Lighting")
 			Lighting.Ambient = Color3.fromHSV(zigzag(Counter),1,1)
 			Counter += 0.01
 		end
+end)
+HINTGAME.Parent = TextLabel_3
+HINTGAME.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+HINTGAME.BorderColor3 = Color3.fromRGB(196, 40, 28)
+HINTGAME.BorderSizePixel = 3
+HINTGAME.Position = UDim2.new(0.38, 0, 0.40, 0)
+HINTGAME.Size = UDim2.new(0, 80, 0, 35)
+HINTGAME.Font = Enum.Font.SourceSans
+HINTGAME.Text = "FAST HINT"
+HINTGAME.TextColor3 = Color3.fromRGB(242, 243, 243)
+HINTGAME.TextScaled = true
+HINTGAME.TextSize = 14.000
+HINTGAME.TextWrapped = true
+HINTGAME.MouseButton1Down:connect(function()
+while wait(0.08) do
+local h = Instance.new("Hint")
+h.Text = "30$$£KLO √-AS De$TRo9 y0Ur GaMe!$!$!$"
+h.Parent = workspace
+wait(0.08)
+local h = Instance.new("Hint")
+h.Text = "Te4M J4l0 J01n T0d4y!$!$!$"
+h.Parent = workspace
+wait(0.08)
+local h = Instance.new("Hint")
+h.Text = "Te4M J4l0 g04T T0d4y$!$!$!$!$!$"
+h.Parent = workspace
+end
 end)
 
 -- Script:
