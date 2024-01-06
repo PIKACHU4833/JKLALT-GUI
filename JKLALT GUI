@@ -337,7 +337,7 @@ Chicken.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Chicken.Rotation = 25
 Chicken.BorderColor3 = Color3.fromRGB(196, 40, 28)
 Chicken.BorderSizePixel = 3
-Chicken.Position = UDim2.new(1.2, 0, 0.1, 0)
+Chicken.Position = UDim2.new(1.04, 0, 0.1, 0)
 Chicken.Size = UDim2.new(0, 80, 0, 35)
 Chicken.Font = Enum.Font.SourceSans
 Chicken.Text = "Chicken Arms"
@@ -351,6 +351,44 @@ game.Workspace[CHICKEN].Torso["Left Shoulder"].C0 = CFrame.new(-1.5, 0.5, 0) * C
 game.Workspace[CHICKEN].Torso["Left Shoulder"].C1 = CFrame.new(0, 0.5, 0)
 game.Workspace[CHICKEN].Torso["Right Shoulder"].C0 = CFrame.new(1.5, 0.5, 0) * CFrame.fromEulerAnglesXYZ(0,-math.pi/2,0) * CFrame.fromEulerAnglesXYZ(math.pi/2, 0, 0) * CFrame.fromEulerAnglesXYZ(0,-math.pi/2,0)
 game.Workspace[CHICKEN].Torso["Right Shoulder"].C1 = CFrame.new(0, 0.5, 0)
+end)
+meshdisco.Parent = Frame
+meshdisco.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+meshdisco.Rotation = 25
+meshdisco.BorderColor3 = Color3.fromRGB(196, 40, 28)
+meshdisco.BorderSizePixel = 3
+meshdisco.Position = UDim2.new(1.04, 0, 0.25, 0)
+meshdisco.Size = UDim2.new(0, 100, 0, 35)
+meshdisco.Font = Enum.Font.SourceSans
+meshdisco.Text = "Mesh Disco"
+meshdisco.TextColor3 = Color3.fromRGB(242, 243, 243)
+meshdisco.TextScaled = true
+meshdisco.TextSize = 14.000
+meshdisco.TextWrapped = true
+meshdisco.MouseButton1Down:connect(function()
+plr = game.Players.LocalPlayer.Name
+meshes = {"Brick","Cylinder","Head","Sphere","Torso","Wedge"}
+h = game.Workspace[plr].Head.Mesh
+t = Instance.new("SpecialMesh",game.Workspace[plr].Torso)
+la = Instance.new("SpecialMesh",game.Workspace[plr]["Left Arm"])
+ra = Instance.new("SpecialMesh",game.Workspace[plr]["Right Arm"])
+ll = Instance.new("SpecialMesh",game.Workspace[plr]["Left Leg"])
+rl = Instance.new("SpecialMesh",game.Workspace[plr]["Right Leg"])
+while true do
+wait(0.1)
+h.MeshType = meshes[math.random(1,#meshes)]
+h.Parent.BrickColor = BrickColor.Random()
+t.MeshType = meshes[math.random(1,#meshes)]
+t.Parent.BrickColor = BrickColor.Random()
+la.MeshType = meshes[math.random(1,#meshes)]
+la.Parent.BrickColor = BrickColor.Random()
+ra.MeshType = meshes[math.random(1,#meshes)]
+ra.Parent.BrickColor = BrickColor.Random()
+ll.MeshType = meshes[math.random(1,#meshes)]
+ll.Parent.BrickColor = BrickColor.Random()
+rl.MeshType = meshes[math.random(1,#meshes)]
+rl.Parent.BrickColor = BrickColor.Random()
+end
 end)
 
 -- Script:
