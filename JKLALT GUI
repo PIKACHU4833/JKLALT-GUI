@@ -14,6 +14,7 @@ local HINTGAME = Instance.new("TextButton")
 local SKYBOX = Instance.new("TextButton")
 local MUSIC = Instance.new("TextButton")
 local CHATALL = Instance.new("TextButton")
+local DECAL = Instance.new("TextButton")
 
 --Properties :
 
@@ -194,6 +195,69 @@ for i,v in pairs(game.Players:GetChildren()) do
 game:GetService("Chat"):Chat(v.Character.Head,"TEAM JKLO JOIN TODAY!") 
 end
 end)
+DECAL.Parent = Frame
+DECAL.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DECAL.BorderColor3 = Color3.fromRGB(196, 40, 28)
+DECAL.BorderSizePixel = 3
+DECAL.Position = UDim2.new(0.50, 0, 0.4, 0)
+DECAL.Size = UDim2.new(0, 80, 0, 35)
+DECAL.Font = Enum.Font.SourceSans
+DECAL.Text = "DECAL"
+DECAL.TextColor3 = Color3.fromRGB(242, 243, 243)
+DECAL.TextScaled = true
+DECAL.TextSize = 14.000
+DECAL.TextWrapped = true
+DECAL.MouseButton1Down:connect(function()
+s = Instance.new("Sky")
+s.Name = "Skybox"
+s.SkyboxBk = "http://www.roblox.com/asset/?id=15866619293"
+s.SkyboxDn = "http://www.roblox.com/asset/?id=15866619293"
+s.SkyboxFt = "http://www.roblox.com/asset/?id=15866619293"
+s.SkyboxLf = "http://www.roblox.com/asset/?id=15866619293"
+s.SkyboxRt = "http://www.roblox.com/asset/?id=15866619293"
+s.SkyboxUp = "http://www.roblox.com/asset/?id=15866619293"
+        s.Parent = game.Lighting
+		local ID = 15866619293
+		function spamDecal(v)
+			if v:IsA("Part") then
+				for i = 0, 5 do
+					D = Instance.new("Decal")
+					D.Name = "k00pz"
+					D.Face = i
+					D.Parent = v
+					D.Texture = ("http://www.roblox.com/asset/?id="..Id)
+				end
+			else
+				if v:IsA("Model") then
+					for a,b in pairs(v:GetChildren()) do
+						spamDecal(b)
+					end
+				end
+			end
+		end
+		function decalspam(id)
+			Id = id
+			for i,v in pairs(game.Workspace:GetChildren()) do
+				if v:IsA("Part") then
+					for i = 0, 5 do
+						D = Instance.new("Decal")
+						D.Name = "k00pz"
+						D.Face = i
+						D.Parent = v
+						D.Texture = ("http://www.roblox.com/asset/?id="..id)
+					end
+				else
+					if v:IsA("Model") then
+						for a,b in pairs(v:GetChildren()) do
+							spamDecal(b)
+						end
+					end
+				end
+			end
+		end	
+decalspam(ID)
+end)
+
 -- Script:
 
 local function QFCS_fake_script() -- Frame.Dragify 
