@@ -18,6 +18,11 @@ local DECAL = Instance.new("TextButton")
 local JUMPSCARE = Instance.new("TextButton")
 local NEWFACE = Instance.new("TextButton")
 
+-- Instances:
+
+local Chicken = Instance.new("TextButton")
+local meshdisco = Instance.new("TextButton")
+
 --Properties :
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -107,7 +112,7 @@ local Lighting = game:GetService("Lighting")
 		while wait(0.1) do 
 			ColorCorrection.TintColor = Color3.fromHSV(zigzag(Counter),1,1)
 			Lighting.Ambient = Color3.fromHSV(zigzag(Counter),1,1)
-			Counter += 0.1
+			Counter += 0.05
 		end
 end)
 HINTGAME.Parent = Frame
@@ -326,6 +331,26 @@ text1.BackgroundTransparency = 0
 text1.Parent=gui1
 wait(1)
 text1.BackgroundTransparency = 1
+end)
+Chicken.Parent = Frame
+Chicken.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Chicken.Rotation = 25
+Chicken.BorderColor3 = Color3.fromRGB(196, 40, 28)
+Chicken.BorderSizePixel = 3
+Chicken.Position = UDim2.new(1.2, 0, 0.1, 0)
+Chicken.Size = UDim2.new(0, 80, 0, 35)
+Chicken.Font = Enum.Font.SourceSans
+Chicken.Text = "Chicken Arms"
+Chicken.TextColor3 = Color3.fromRGB(242, 243, 243)
+Chicken.TextScaled = true
+Chicken.TextSize = 14.000
+Chicken.TextWrapped = true
+Chicken.MouseButton1Down:connect(function()
+CHICKEN = game.Players.LocalPlayer.Name
+game.Workspace[CHICKEN].Torso["Left Shoulder"].C0 = CFrame.new(-1.5, 0.5, 0) * CFrame.fromEulerAnglesXYZ(0,math.pi/2,0) * CFrame.fromEulerAnglesXYZ(math.pi/2, 0, 0) * CFrame.fromEulerAnglesXYZ(0,-math.pi/2,0)
+game.Workspace[CHICKEN].Torso["Left Shoulder"].C1 = CFrame.new(0, 0.5, 0)
+game.Workspace[CHICKEN].Torso["Right Shoulder"].C0 = CFrame.new(1.5, 0.5, 0) * CFrame.fromEulerAnglesXYZ(0,-math.pi/2,0) * CFrame.fromEulerAnglesXYZ(math.pi/2, 0, 0) * CFrame.fromEulerAnglesXYZ(0,-math.pi/2,0)
+game.Workspace[CHICKEN].Torso["Right Shoulder"].C1 = CFrame.new(0, 0.5, 0)
 end)
 
 -- Script:
