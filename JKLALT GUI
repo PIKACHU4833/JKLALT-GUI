@@ -299,7 +299,7 @@ for i,v in pairs(game.Players:GetPlayers()) do
 		end
 	end
 end)
-NEWFACE.Parent = TextLabel_3
+NEWFACE.Parent = Frame
 NEWFACE.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 NEWFACE.BorderColor3 = Color3.fromRGB(196, 40, 28)
 NEWFACE.BorderSizePixel = 3
