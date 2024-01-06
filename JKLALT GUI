@@ -294,7 +294,7 @@ for i,v in pairs(game.Players:GetPlayers()) do
                                 newimage.BackgroundTransparency = 1
                                 
        s = Instance.new("Sound",newgui)
-				s.SoundId = "rbxassetid://8683380188"
+				s.SoundId = "rbxassetid://0"
 				s.Volume = 9e9
 				s.Looped = true
 				s:Play()
