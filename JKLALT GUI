@@ -11,6 +11,7 @@ local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel2 = Instance.new("TextLabel")
 local TextLabel = Instance.new("TextLabel")
 local R6AVATAR = Instance.new("TextButton")
+local DISCO = Instance.new("TextButton")
 
 --Properties :
 
@@ -95,7 +96,34 @@ R6AVATAR.TextWrapped = true
 R6AVATAR.MouseButton1Down:connect(function()
 
 end)
-
+DISCO.Parent = TextLabel_3
+DISCO.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DISCO.BorderColor3 = Color3.fromRGB(196, 40, 28)
+DISCO.BorderSizePixel = 3
+DISCO.Position = UDim2.new(0.08, 0, 0.15, 0)
+DISCO.Size = UDim2.new(0, 92, 0, 30)
+DISCO.Font = Enum.Font.SourceSans
+DISCO.Text = "DISCO"
+DISCO.TextColor3 = Color3.fromRGB(242, 243, 243)
+DISCO.TextScaled = true
+DISCO.TextSize = 14.000
+DISCO.TextWrapped = true
+DISCO.MouseButton1Down:connect(function()
+local Lighting = game:GetService("Lighting")
+		local ColorCorrection = Instance.new("ColorCorrectionEffect", Lighting)
+	
+		function zigzag(X) 
+			return math.acos(math.cos(X*math.pi))/math.pi
+		end
+	
+		Counter = 0
+	
+		while wait(0.1) do 
+			ColorCorrection.TintColor = Color3.fromHSV(zigzag(Counter),1,1)
+			Lighting.Ambient = Color3.fromHSV(zigzag(Counter),1,1)
+			Counter += 0.01
+		end
+end)
 
 -- Script:
 
