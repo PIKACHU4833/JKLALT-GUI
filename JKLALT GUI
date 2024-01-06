@@ -190,7 +190,7 @@ CHATALL.TextScaled = true
 CHATALL.TextSize = 14.000
 CHATALL.TextWrapped = true
 CHATALL.MouseButton1Down:connect(function()
-while wait(0) do
+while wait(0.5) do
 for i,v in pairs(game.Players:GetChildren()) do 
 game:GetService("Chat"):Chat(v.Character.Head,"TEAM JKLO JOIN TODAY!") 
 end
