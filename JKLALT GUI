@@ -1,1 +1,107 @@
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local IMAGE = Instance.new("ImageLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel2 = Instance.new("TextLabel")
+
+--Properties :
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+Frame.BorderColor3 = Color3.fromRGB(196, 40, 28)
+Frame.BorderSizePixel = 3
+Frame.Position = UDim2.new(0.536656916, 0, 0.220883533, 0)
+Frame.Size = UDim2.new(0, 356, 0, 340)
+
+IMAGE.Parent = Frame
+IMAGE.BackgroundColor3 = Color3.fromRGB(174, 167, 255)
+IMAGE.BackgroundTransparency = 1
+IMAGE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IMAGE.BorderSizePixel = 3
+IMAGE.Size = UDim2.new(0, 356, 0, 356)
+IMAGE.Image = "rbxassetid://15866619293"
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundTransparency = 1
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+ScrollingFrame.Position = UDim2.new(0.02, 0, 0.08, 0)
+ScrollingFrame.Size = UDim2.new(0, 343, 0, 333)
+
+TextLabel_3.Parent = ScrollingFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 356, 0, 354)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = ""
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+TextLabel2.Parent = Frame
+TextLabel2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel2.BorderColor3 = Color3.fromRGB(196, 40, 28)
+TextLabel2.BorderSizePixel = 3
+TextLabel2.Position = UDim2.new(0.15, 0, 0, 0)
+TextLabel2.Size = UDim2.new(0, 241, 0, 30)
+TextLabel2.Font = Enum.Font.SourceSans
+TextLabel2.Text = "JKLALT GUI"
+TextLabel2.TextColor3 = Color3.fromRGB(242, 243, 243)
+TextLabel2.TextScaled = true
+TextLabel2.TextSize = 14.000
+TextLabel2.TextWrapped = true
+
+local function QFCS_fake_script() -- Frame.Dragify 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(QFCS_fake_script)()
