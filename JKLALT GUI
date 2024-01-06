@@ -181,7 +181,7 @@ CHATALL.Parent = Frame
 CHATALL.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 CHATALL.BorderColor3 = Color3.fromRGB(196, 40, 28)
 CHATALL.BorderSizePixel = 3
-CHATALL.Position = UDim2.new(0.38, 0, 0.4, 0)
+CHATALL.Position = UDim2.new(0.40, 0, 0.4, 0)
 CHATALL.Size = UDim2.new(0, 78, 0, 35)
 CHATALL.Font = Enum.Font.SourceSans
 CHATALL.Text = "CHAT ALL"
@@ -190,7 +190,6 @@ CHATALL.TextScaled = true
 CHATALL.TextSize = 14.000
 CHATALL.TextWrapped = true
 CHATALL.MouseButton1Down:connect(function()
-while wait(0.5) do
 for i,v in pairs(game.Players:GetChildren()) do 
 game:GetService("Chat"):Chat(v.Character.Head,"TEAM JKLO JOIN TODAY!") 
 end
@@ -278,27 +277,27 @@ local function PKIPWI_fake_script() -- TextLabel.LocalScript
 	while true do
     script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
     for i = 0,255,10 do
-        wait()
+        wait(0.4)
         script.Parent.TextColor3 = Color3.new(255/255,i/255,0/255)
     end
     for i = 255,0,-10 do
-        wait()
+        wait(0.4)
         script.Parent.TextColor3 = Color3.new(i/255,255/255,0/255)
     end
     for i = 0,255,10 do
-        wait()
+        wait(0.4)
         script.Parent.TextColor3 = Color3.new(0/255,255/255,i/255)
     end
     for i = 255,0,-10 do
-        wait()
+        wait(0.4)
         script.Parent.TextColor3 = Color3.new(0/255,i/255,255/255)
     end
     for i = 0,255,10 do
-        wait()
+        wait(0.4)
         script.Parent.TextColor3 = Color3.new(i/255,0/255,255/255)
     end
     for i = 255,0,-10 do
-        wait()
+        wait(0.4)
         script.Parent.TextColor3 = Color3.new(255/255,0/255,i/255)
     end
 end
