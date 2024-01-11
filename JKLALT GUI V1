@@ -85,7 +85,7 @@ TextLabel1.BackgroundTransparency = 1
 TextLabel1.Position = UDim2.new(0.15, 0, 7.3, 0)
 TextLabel1.Size = UDim2.new(0, 241, 0, 30)
 TextLabel1.Font = Enum.Font.SourceSans
-TextLabel1.Text = ""
+TextLabel1.Text = "Team redkidd and BossJKLO Has Showcase"
 TextLabel1.TextColor3 = Color3.fromRGB(242, 243, 243)
 TextLabel1.TextScaled = true
 TextLabel1.TextSize = 14.000
@@ -952,19 +952,6 @@ local function PKIPWI_fake_script() -- TextLabel1.LocalScript
     for i = 255,0,-10 do
         wait(0.05)
         script.Parent.TextColor3 = Color3.new(255/255,0/255,i/255)
-    end
-end
-end
-coroutine.wrap(PKIPWI_fake_script)()
-local function PKIPWI_fake_script() -- TextLabel1.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel1)
-
-	while true do
-wait(0.4)
-    TextLabel1.Text = "teamredkidd has showcase"
-wait(5)
-    TextLabel1.Text = "BossJKLO has showcase"
-wait(5)
     end
 end
 end
