@@ -7,7 +7,6 @@ local Frame = Instance.new("Frame")
 local IMAGE = Instance.new("ImageLabel")
 local TextLabel2 = Instance.new("TextLabel")
 local TextLabel = Instance.new("TextLabel")
-local TextLabel1 = Instance.new("TextLabel")
 local R6AVATAR = Instance.new("TextButton")
 local DISCO = Instance.new("TextButton")
 local HINTGAME = Instance.new("TextButton")
@@ -46,7 +45,7 @@ IMAGE.BackgroundTransparency = 1
 IMAGE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 IMAGE.BorderSizePixel = 3
 IMAGE.Size = UDim2.new(0, 356, 0, 300)
-IMAGE.Image = "rbxassetid://15866619293"
+IMAGE.Image = "rbxassetid://15979737796"
 
 TextLabel2.Parent = Frame
 TextLabel2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -55,8 +54,8 @@ TextLabel2.BorderSizePixel = 3
 TextLabel2.BackgroundTransparency = 1
 TextLabel2.Position = UDim2.new(0.15, 0, 0, 0)
 TextLabel2.Size = UDim2.new(0, 241, 0, 30)
-TextLabel2.Font = Enum.Font.SourceSans
-TextLabel2.Text = "Y00nk1DD Gu1 V¹ $$"
+TextLabel2.Font = Enum.Font.FredokaOne
+TextLabel2.Text = "Y00nk1DD Gu1 V2 VERRY PRIVATE SERVER SIDE EDITION"
 TextLabel2.TextColor3 = Color3.fromRGB(242, 243, 243)
 TextLabel2.TextScaled = true
 TextLabel2.TextSize = 14.000
@@ -70,25 +69,11 @@ TextLabel.BorderSizePixel = 3
 TextLabel.Position = UDim2.new(0.20, 0, 0.08, 0)
 TextLabel.Size = UDim2.new(0, 200, 0, 35)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Th1s $$ Gu1 M4de By JkL0_tE4m dEvE10pER 0r k00paz#0 14anz#5358 4nD B0ssJkL0 !$!$!$"
+TextLabel.Text = "Th1s $$ Gu1 M4de By JkL0_tE4m dEvE10pER ( TK8 )"
 TextLabel.TextColor3 = Color3.fromRGB(242, 243, 243)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
-
-TextLabel1.Parent = Frame
-TextLabel1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel1.BorderColor3 = Color3.fromRGB(196, 40, 28)
-TextLabel1.BorderSizePixel = 3
-TextLabel1.BackgroundTransparency = 1
-TextLabel1.Position = UDim2.new(0.15, 0, 0.75, 0)
-TextLabel1.Size = UDim2.new(0, 241, 0, 50)
-TextLabel1.Font = Enum.Font.SourceSans
-TextLabel1.Text = "Team redkidd,BossJKLO,team8x8x8x8 and C00LBOI Has Showcase"
-TextLabel1.TextColor3 = Color3.fromRGB(242, 243, 243)
-TextLabel1.TextScaled = true
-TextLabel1.TextSize = 14.000
-TextLabel1.TextWrapped = true
 
 R6AVATAR.Parent = Frame
 R6AVATAR.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -918,38 +903,6 @@ local function PKIPWI_fake_script() -- TextLabel.LocalScript
     end
     for i = 255,0,-10 do
         wait(0.0)
-        script.Parent.TextColor3 = Color3.new(255/255,0/255,i/255)
-    end
-end
-end
-coroutine.wrap(PKIPWI_fake_script)()
-local function PKIPWI_fake_script() -- TextLabel1.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel1)
-
-	while true do
-    script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
-    for i = 0,255,10 do
-        wait(0.05)
-        script.Parent.TextColor3 = Color3.new(255/255,i/255,0/255)
-    end
-    for i = 255,0,-10 do
-        wait(0.05)
-        script.Parent.TextColor3 = Color3.new(i/255,255/255,0/255)
-    end
-    for i = 0,255,10 do
-        wait(0.05)
-        script.Parent.TextColor3 = Color3.new(0/255,255/255,i/255)
-    end
-    for i = 255,0,-10 do
-        wait(0.05)
-        script.Parent.TextColor3 = Color3.new(0/255,i/255,255/255)
-    end
-    for i = 0,255,10 do
-        wait(0.05)
-        script.Parent.TextColor3 = Color3.new(i/255,0/255,255/255)
-    end
-    for i = 255,0,-10 do
-        wait(0.05)
         script.Parent.TextColor3 = Color3.new(255/255,0/255,i/255)
     end
 end
