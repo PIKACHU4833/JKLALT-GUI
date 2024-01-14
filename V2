@@ -338,7 +338,7 @@ text1.BackgroundTransparency = 1
 end)
 Chicken.Parent = Frame
 Chicken.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Chicken.Rotation = 25
+Chicken.Rotation = 70
 Chicken.BorderColor3 = Color3.fromRGB(196, 40, 28)
 Chicken.BorderSizePixel = 3
 Chicken.Position = UDim2.new(1.04, 0, 0.1, 0)
@@ -358,7 +358,7 @@ game.Workspace[CHICKEN].Torso["Right Shoulder"].C1 = CFrame.new(0, 0.5, 0)
 end)
 meshdisco.Parent = Frame
 meshdisco.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-meshdisco.Rotation = 25
+meshdisco.Rotation = 30
 meshdisco.BorderColor3 = Color3.fromRGB(196, 40, 28)
 meshdisco.BorderSizePixel = 3
 meshdisco.Position = UDim2.new(1.04, 0, 0.35, 0)
@@ -396,7 +396,7 @@ end
 end)
 MESSAGESPAM.Parent = Frame
 MESSAGESPAM.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-MESSAGESPAM.Rotation = -25
+MESSAGESPAM.Rotation = -70
 MESSAGESPAM.BorderColor3 = Color3.fromRGB(196, 40, 28)
 MESSAGESPAM.BorderSizePixel = 3
 MESSAGESPAM.Position = UDim2.new(-0.27, 0, 0.1, 0)
