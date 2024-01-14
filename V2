@@ -186,6 +186,7 @@ Spooky = Instance.new("Sound", game.Workspace)
 		Spooky.Name = "Spooky"
 		Spooky.SoundId = "rbxassetid://10472612727"
 		Spooky.Looped = true
+Spooky.Volume = 6e9
 		Spooky:Play()
 end)
 CHATALL.Parent = Frame
