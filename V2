@@ -613,7 +613,6 @@ y00zTHEME.TextColor3 = Color3.fromRGB(242, 243, 243)
 y00zTHEME.TextScaled = true
 y00zTHEME.TextSize = 14.000
 y00zTHEME.TextWrapped = true
-y00zTHEME.MouseButton1Down:connect(function()
 Y00zTHEME.MouseButton1Down:connect(function()
 Spooky = Instance.new("Sound", game.Workspace)
 		Spooky.Name = "real's theme"
