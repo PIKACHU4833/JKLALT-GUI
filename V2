@@ -37,7 +37,7 @@ local MESSAGESPAM = Instance.new("TextButton")
 local SUSHIT = Instance.new("TextButton")
 local FIREOUTSIDE = Instance.new("TextButton")
 local BALLRAINING = Instance.new("TextButton")
-local K00P8 = Instance.new("TextButton")
+local Y00zTHEME = Instance.new("TextButton")
 local OLDTHEME = Instance.new("TextButton")
 local UNANCHOR = Instance.new("TextButton")
 local IMAGE2 = Instance.new("ImageLabel")
@@ -600,6 +600,27 @@ while true do
 			doom.Velocity=Vector3.new(communism, communism, communism)
 			doom.Parent = game.Workspace
 		end
+end)
+y00zTHEME.Parent = SCROLLscript
+y00zTHEME.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+y00zTHEME.BorderColor3 = Color3.fromRGB(196, 40, 28)
+y00zTHEME.BorderSizePixel = 3
+y00zTHEME.Position = UDim2.new(0.08, 0, 0.83, 0)
+y00zTHEME.Size = UDim2.new(0, 100, 0, 35)
+y00zTHEME.Font = Enum.Font.SourceSans
+y00zTHEME.Text = "y00zkidd THEME ( D1P )"
+y00zTHEME.TextColor3 = Color3.fromRGB(242, 243, 243)
+y00zTHEME.TextScaled = true
+y00zTHEME.TextSize = 14.000
+y00zTHEME.TextWrapped = true
+y00zTHEME.MouseButton1Down:connect(function()
+dss.MouseButton1Down:connect(function()
+Spooky = Instance.new("Sound", game.Workspace)
+		Spooky.Name = "real's theme"
+		Spooky.SoundId = "rbxassetid://6695430066"
+                Spooky.Pitch = 1.1
+		Spooky.Looped = true
+		Spooky:Play()
 end)
 
 -- Script:
@@ -1193,6 +1214,38 @@ end
 coroutine.wrap(PKIPWI_fake_script)()
 local function PKIPWI_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', BALLRAINING)
+
+	while true do
+    script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
+    for i = 0,255,10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(255/255,i/255,0/255)
+    end
+    for i = 255,0,-10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(i/255,255/255,0/255)
+    end
+    for i = 0,255,10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(0/255,255/255,i/255)
+    end
+    for i = 255,0,-10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(0/255,i/255,255/255)
+    end
+    for i = 0,255,10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(i/255,0/255,255/255)
+    end
+    for i = 255,0,-10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(255/255,0/255,i/255)
+    end
+end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+local function PKIPWI_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', y00zTHEME)
 
 	while true do
     script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
