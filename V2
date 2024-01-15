@@ -534,7 +534,6 @@ BALLRAINING.TextScaled = true
 BALLRAINING.TextSize = 14.000
 BALLRAINING.TextWrapped = true
 BALLRAINING.MouseButton1Down:connect(function()
-while true do
 			communism=math.random(0,3)
 			crex=math.random(3,100)
 			obesity=math.random(-500, 500)
