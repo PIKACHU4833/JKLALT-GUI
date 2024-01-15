@@ -13,6 +13,7 @@ local R6AVATAR = Instance.new("TextButton")
 local DISCO = Instance.new("TextButton")
 local HINTGAME = Instance.new("TextButton")
 local SKYBOX = Instance.new("TextButton")
+local SKYBOX2 = Instance.new("TextButton")
 local MUSIC = Instance.new("TextButton")
 local CHATALL = Instance.new("TextButton")
 local DECAL = Instance.new("TextButton")
@@ -171,9 +172,9 @@ SKYBOX.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 SKYBOX.BorderColor3 = Color3.fromRGB(196, 40, 28)
 SKYBOX.BorderSizePixel = 3
 SKYBOX.Position = UDim2.new(0.38, 0, 0.5, 0)
-SKYBOX.Size = UDim2.new(0, 100, 0, 35)
+SKYBOX.Size = UDim2.new(0, 50, 0, 35)
 SKYBOX.Font = Enum.Font.SourceSans
-SKYBOX.Text = "SKYBOX"
+SKYBOX.Text = "SKYBOX Y00nkida Avatar"
 SKYBOX.TextColor3 = Color3.fromRGB(242, 243, 243)
 SKYBOX.TextScaled = true
 SKYBOX.TextSize = 14.000
@@ -187,6 +188,30 @@ s = Instance.new("Sky")
 		s.SkyboxLf = "rbxassetid://15866619293"
 		s.SkyboxRt = "rbxassetid://15866619293"
                 s.SkyboxUp = "rbxassetid://15866619293"
+                s.Parent = game.Lighting
+wait()
+end)
+SKYBOX2.Parent = SCROLLscript
+SKYBOX2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SKYBOX2.BorderColor3 = Color3.fromRGB(196, 40, 28)
+SKYBOX2.BorderSizePixel = 3
+SKYBOX2.Position = UDim2.new(0.50, 0, 0.5, 0)
+SKYBOX2.Size = UDim2.new(0, 50, 0, 35)
+SKYBOX2.Font = Enum.Font.SourceSans
+SKYBOX2.Text = "SKYBOX Y00nkida Dreamybullxxx"
+SKYBOX2.TextColor3 = Color3.fromRGB(242, 243, 243)
+SKYBOX2.TextScaled = true
+SKYBOX2.TextSize = 14.000
+SKYBOX2.TextWrapped = true
+SKYBOX2.MouseButton1Down:connect(function()
+s = Instance.new("Sky")
+		s.Name = "SKY"
+		s.SkyboxBk = "rbxassetid://15992351673"
+		s.SkyboxDn = "rbxassetid://15992351673"
+		s.SkyboxFt = "rbxassetid://15992351673"
+		s.SkyboxLf = "rbxassetid://15992351673"
+		s.SkyboxRt = "rbxassetid://15992351673"
+                s.SkyboxUp = "rbxassetid://15992351673"
                 s.Parent = game.Lighting
 wait()
 end)
@@ -900,6 +925,38 @@ end
 coroutine.wrap(PKIPWI_fake_script)()
 local function PKIPWI_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', Chicken)
+
+	while true do
+    script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
+    for i = 0,255,10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(255/255,i/255,0/255)
+    end
+    for i = 255,0,-10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(i/255,255/255,0/255)
+    end
+    for i = 0,255,10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(0/255,255/255,i/255)
+    end
+    for i = 255,0,-10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(0/255,i/255,255/255)
+    end
+    for i = 0,255,10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(i/255,0/255,255/255)
+    end
+    for i = 255,0,-10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(255/255,0/255,i/255)
+    end
+end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+local function PKIPWI_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', SKYBOX2)
 
 	while true do
     script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
