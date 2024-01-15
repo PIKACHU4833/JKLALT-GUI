@@ -633,7 +633,7 @@ IMAGE.BackgroundColor3 = Color3.fromRGB(174, 167, 255)
 IMAGE.BackgroundTransparency = 1
 IMAGE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 IMAGE.BorderSizePixel = 3
-IMAGE.Size = UDim2.new(0, 420, 0, 600)
+IMAGE.Size = UDim2.new(0, 190, 0, 150)
 IMAGE.Image = "rbxassetid://15886422776"
 
 -- Script:
