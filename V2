@@ -23,6 +23,9 @@ local NEWFACE = Instance.new("TextButton")
 -- Instances right:
 
 local Chicken = Instance.new("TextButton")
+
+-- More Instances :
+
 local meshdisco = Instance.new("TextButton")
 
 -- Instances left:
@@ -259,21 +262,12 @@ DECAL.BorderSizePixel = 3
 DECAL.Position = UDim2.new(0.08, 0, 0.2, 0)
 DECAL.Size = UDim2.new(0, 80, 0, 35)
 DECAL.Font = Enum.Font.SourceSans
-DECAL.Text = "DECAL"
+DECAL.Text = "DECAL SPAM"
 DECAL.TextColor3 = Color3.fromRGB(242, 243, 243)
 DECAL.TextScaled = true
 DECAL.TextSize = 14.000
 DECAL.TextWrapped = true
 DECAL.MouseButton1Down:connect(function()
-s = Instance.new("Sky")
-s.Name = "Skybox"
-s.SkyboxBk = "http://www.roblox.com/asset/?id=15866619293"
-s.SkyboxDn = "http://www.roblox.com/asset/?id=15866619293"
-s.SkyboxFt = "http://www.roblox.com/asset/?id=15866619293"
-s.SkyboxLf = "http://www.roblox.com/asset/?id=15866619293"
-s.SkyboxRt = "http://www.roblox.com/asset/?id=15866619293"
-s.SkyboxUp = "http://www.roblox.com/asset/?id=15866619293"
-        s.Parent = game.Lighting
 		local ID = 15866619293
 		function spamDecal(v)
 			if v:IsA("Part") then
@@ -404,10 +398,9 @@ game.Workspace[CHICKEN].Torso["Right Shoulder"].C1 = CFrame.new(0, 0.5, 0)
 end)
 meshdisco.Parent = Frame
 meshdisco.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-meshdisco.Rotation = 30
 meshdisco.BorderColor3 = Color3.fromRGB(196, 40, 28)
 meshdisco.BorderSizePixel = 3
-meshdisco.Position = UDim2.new(1.04, 0, 0.35, 0)
+meshdisco.Position = UDim2.new(0.36, 0, 0.36, 0)
 meshdisco.Size = UDim2.new(0, 100, 0, 35)
 meshdisco.Font = Enum.Font.SourceSans
 meshdisco.Text = "Mesh Disco"
