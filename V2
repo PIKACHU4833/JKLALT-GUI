@@ -5,7 +5,7 @@
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local SCROLLscript = Instance.new("ImageLabel")
+local SCROLLscript = Instance.new("TextLabel")
 local IMAGE = Instance.new("ImageLabel")
 local TextLabel2 = Instance.new("TextLabel")
 local TextLabel = Instance.new("TextLabel")
@@ -46,7 +46,7 @@ ScrollingFrame.Active = true
 ScrollingFrame.BackgroundTransparency = 1
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.Position = UDim2.new(0.02, 0, 0.08, 0)
-ScrollingFrame.Size = UDim2.new(0, 407, 0, 285)
+ScrollingFrame.Size = UDim2.new(0, 407, 0, 265)
 
 SCROLLscript.Parent = ScrollingFrame
 SCROLLscript.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -65,8 +65,8 @@ IMAGE.BackgroundColor3 = Color3.fromRGB(174, 167, 255)
 IMAGE.BackgroundTransparency = 1
 IMAGE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 IMAGE.BorderSizePixel = 3
-IMAGE.Size = UDim2.new(0, 420, 0, 300)
-IMAGE.Image = "rbxassetid://15979737796"
+IMAGE.Size = UDim2.new(0, 420, 0, 600)
+IMAGE.Image = "rbxassetid://15964603313"
 
 TextLabel2.Parent = Frame
 TextLabel2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
