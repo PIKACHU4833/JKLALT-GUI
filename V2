@@ -612,10 +612,10 @@ OLDTHEME.Parent = SCROLLscript
 OLDTHEME.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 OLDTHEME.BorderColor3 = Color3.fromRGB(196, 40, 28)
 OLDTHEME.BorderSizePixel = 3
-OLDTHEME.Position = UDim2.new(0.66, 0, 0.87, 0)
+OLDTHEME.Position = UDim2.new(0.08, 0, 0.87, 0)
 OLDTHEME.Size = UDim2.new(0, 100, 0, 35)
 OLDTHEME.Font = Enum.Font.SourceSans
-OLDTHEME.Text = "y00nkidd OLD THEME"
+OLDTHEME.Text = "y00nkidd THEME"
 OLDTHEME.TextColor3 = Color3.fromRGB(242, 243, 243)
 OLDTHEME.TextScaled = true
 OLDTHEME.TextSize = 14.000
@@ -1252,38 +1252,6 @@ end
 coroutine.wrap(PKIPWI_fake_script)()
 local function PKIPWI_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', y00zTHEME)
-
-	while true do
-    script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
-    for i = 0,255,10 do
-        wait(0.0)
-        script.Parent.TextColor3 = Color3.new(255/255,i/255,0/255)
-    end
-    for i = 255,0,-10 do
-        wait(0.0)
-        script.Parent.TextColor3 = Color3.new(i/255,255/255,0/255)
-    end
-    for i = 0,255,10 do
-        wait(0.0)
-        script.Parent.TextColor3 = Color3.new(0/255,255/255,i/255)
-    end
-    for i = 255,0,-10 do
-        wait(0.0)
-        script.Parent.TextColor3 = Color3.new(0/255,i/255,255/255)
-    end
-    for i = 0,255,10 do
-        wait(0.0)
-        script.Parent.TextColor3 = Color3.new(i/255,0/255,255/255)
-    end
-    for i = 255,0,-10 do
-        wait(0.0)
-        script.Parent.TextColor3 = Color3.new(255/255,0/255,i/255)
-    end
-end
-end
-coroutine.wrap(PKIPWI_fake_script)()
-local function PKIPWI_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', OLDTHEME)
 
 	while true do
     script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
