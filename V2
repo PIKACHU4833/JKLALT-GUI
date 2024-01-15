@@ -24,13 +24,17 @@ local NEWFACE = Instance.new("TextButton")
 
 local Chicken = Instance.new("TextButton")
 
--- More Instances :
+-- 1 More Instances :
 
 local meshdisco = Instance.new("TextButton")
 
 -- Instances left:
 
 local MESSAGESPAM = Instance.new("TextButton")
+
+-- 2 More Instances :
+
+local SUSHIT = Instance.new("TextButton")
 
 --Properties :
 
@@ -100,20 +104,24 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-R6AVATAR.Parent = Frame
+R6AVATAR.Parent = Frame 
 R6AVATAR.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 R6AVATAR.BorderColor3 = Color3.fromRGB(196, 40, 28)
 R6AVATAR.BorderSizePixel = 3
 R6AVATAR.Position = UDim2.new(0.82, 0, 0, 0)
 R6AVATAR.Size = UDim2.new(0, 67, 0, 35)
 R6AVATAR.Font = Enum.Font.SourceSans
-R6AVATAR.Text = "R6"
+R6AVATAR.Text = "Stop Music" -- Stop Music button change
 R6AVATAR.TextColor3 = Color3.fromRGB(242, 243, 243)
 R6AVATAR.TextScaled = true
 R6AVATAR.TextSize = 14.000
 R6AVATAR.TextWrapped = true
 R6AVATAR.MouseButton1Down:connect(function()
-
+for i,v in pairs(workspace:GetDescendants()) do
+        if v:IsA("Sound") then
+            v.Playing = false
+        end
+    end
 end)
 DISCO.Parent = SCROLLscript
 DISCO.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -122,7 +130,7 @@ DISCO.BorderSizePixel = 3
 DISCO.Position = UDim2.new(0.08, 0, 0.5, 0)
 DISCO.Size = UDim2.new(0, 80, 0, 35)
 DISCO.Font = Enum.Font.SourceSans
-DISCO.Text = "DISCO"
+DISCO.Text = "DISCO MAP"
 DISCO.TextColor3 = Color3.fromRGB(242, 243, 243)
 DISCO.TextScaled = true
 DISCO.TextSize = 14.000
@@ -150,23 +158,23 @@ HINTGAME.BorderSizePixel = 3
 HINTGAME.Position = UDim2.new(0.68, 0, 0.2, 0)
 HINTGAME.Size = UDim2.new(0, 80, 0, 35)
 HINTGAME.Font = Enum.Font.SourceSans
-HINTGAME.Text = "FAST HINT"
+HINTGAME.Text = "SUPPER VERRY VERRY FAST HINT"
 HINTGAME.TextColor3 = Color3.fromRGB(242, 243, 243)
 HINTGAME.TextScaled = true
 HINTGAME.TextSize = 14.000
 HINTGAME.TextWrapped = true
 HINTGAME.MouseButton1Down:connect(function()
-while wait(0.08) do
+while wait(0.06) do
 local h = Instance.new("Hint")
-h.Text = "30$$£KLO √-AS De$TRo9 y0Ur GaMe!$!$!$"
+h.Text = "y00nK144 hAS De$TRo9 Th1$ GaMe!12!?1!31?3!2?"
 h.Parent = workspace
 wait(0.08)
 local h = Instance.new("Hint")
-h.Text = "Te4M J4l0 J01n T0d4y!$!$!$"
+h.Text = "Te4M y00nK144 J01n T0d4y!?1!2?"
 h.Parent = workspace
 wait(0.08)
 local h = Instance.new("Hint")
-h.Text = "Te4M J4l0 g04T T0d4y$!$!$!$!$!$"
+h.Text = "Te4M y00nK144 g04T T0d4y!1?30!?1?1!1?"
 h.Parent = workspace
 end
 end)
@@ -225,7 +233,7 @@ MUSIC.BorderSizePixel = 3
 MUSIC.Position = UDim2.new(0.38, 0, 0.2, 0)
 MUSIC.Size = UDim2.new(0, 100, 0, 35)
 MUSIC.Font = Enum.Font.SourceSans
-MUSIC.Text = "NEW THEME WORK IN DOOR :("
+MUSIC.Text = "NEW THEME ONLY WORK IN DOOR :("
 MUSIC.TextColor3 = Color3.fromRGB(242, 243, 243)
 MUSIC.TextScaled = true
 MUSIC.TextSize = 14.000
@@ -245,14 +253,14 @@ CHATALL.BorderSizePixel = 3
 CHATALL.Position = UDim2.new(0.40, 0, 0.35, 0)
 CHATALL.Size = UDim2.new(0, 78, 0, 35)
 CHATALL.Font = Enum.Font.SourceSans
-CHATALL.Text = "CHAT ALL"
+CHATALL.Text = "SPAM CHaT ALl"
 CHATALL.TextColor3 = Color3.fromRGB(242, 243, 243)
 CHATALL.TextScaled = true
 CHATALL.TextSize = 14.000
 CHATALL.TextWrapped = true
 CHATALL.MouseButton1Down:connect(function()
 for i,v in pairs(game.Players:GetChildren()) do 
-game:GetService("Chat"):Chat(v.Character.Head,"TEAM JKLO JOIN TODAY!") 
+game:GetService("Chat"):Chat(v.Character.Head,"TEAM y00nkidd JOIN TODAY?1!2?24!?1!?1!2?1!3?1") 
 end
 end)
 DECAL.Parent = SCROLLscript
@@ -355,7 +363,7 @@ NEWFACE.BorderSizePixel = 3
 NEWFACE.Position = UDim2.new(0.08, 0, 0.36, 0)
 NEWFACE.Size = UDim2.new(0, 92, 0, 30)
 NEWFACE.Font = Enum.Font.SourceSans
-NEWFACE.Text = "FACE"
+NEWFACE.Text = "y00nkidd FACE"
 NEWFACE.TextColor3 = Color3.fromRGB(242, 243, 243)
 NEWFACE.TextScaled = true
 NEWFACE.TextSize = 14.000
@@ -396,11 +404,11 @@ game.Workspace[CHICKEN].Torso["Left Shoulder"].C1 = CFrame.new(0, 0.5, 0)
 game.Workspace[CHICKEN].Torso["Right Shoulder"].C0 = CFrame.new(1.5, 0.5, 0) * CFrame.fromEulerAnglesXYZ(0,-math.pi/2,0) * CFrame.fromEulerAnglesXYZ(math.pi/2, 0, 0) * CFrame.fromEulerAnglesXYZ(0,-math.pi/2,0)
 game.Workspace[CHICKEN].Torso["Right Shoulder"].C1 = CFrame.new(0, 0.5, 0)
 end)
-meshdisco.Parent = Frame
+meshdisco.Parent = SCROLLscript
 meshdisco.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 meshdisco.BorderColor3 = Color3.fromRGB(196, 40, 28)
 meshdisco.BorderSizePixel = 3
-meshdisco.Position = UDim2.new(0.36, 0, 0.36, 0)
+meshdisco.Position = UDim2.new(0.68, 0, 0.63, 0)
 meshdisco.Size = UDim2.new(0, 100, 0, 35)
 meshdisco.Font = Enum.Font.SourceSans
 meshdisco.Text = "Mesh Disco"
@@ -454,7 +462,26 @@ while wait(0.4) do
        msg:Destroy()
    end
 end)
-
+SUSHIT.Parent = SCROLLscript
+SUSHIT.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SUSHIT.BorderColor3 = Color3.fromRGB(196, 40, 28)
+SUSHIT.BorderSizePixel = 3
+SUSHIT.Position = UDim2.new(0.064, 0, 0.71, 0)
+SUSHIT.Size = UDim2.new(0, 100, 0, 35)
+SUSHIT.Font = Enum.Font.SourceSans
+SUSHIT.Text = "SUS MUSIC HIT"
+SUSHIT.TextColor3 = Color3.fromRGB(242, 243, 243)
+SUSHIT.TextScaled = true
+SUSHIT.TextSize = 14.000
+SUSHIT.TextWrapped = true
+SUSHIT.MouseButton1Down:connect(function()
+Spooky = Instance.new("Sound", game.Workspace)
+		Spooky.Name = "Spooky"
+		Spooky.SoundId = "rbxassetid://7083210943"
+		Spooky.Looped = false
+Spooky.Volume = 6e9
+		Spooky:Play()
+end)
 -- Script:
 
 local function QFCS_fake_script() -- Frame.Dragify 
@@ -950,6 +977,38 @@ end
 coroutine.wrap(PKIPWI_fake_script)()
 local function PKIPWI_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', SKYBOX2)
+
+	while true do
+    script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
+    for i = 0,255,10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(255/255,i/255,0/255)
+    end
+    for i = 255,0,-10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(i/255,255/255,0/255)
+    end
+    for i = 0,255,10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(0/255,255/255,i/255)
+    end
+    for i = 255,0,-10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(0/255,i/255,255/255)
+    end
+    for i = 0,255,10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(i/255,0/255,255/255)
+    end
+    for i = 255,0,-10 do
+        wait(0.0)
+        script.Parent.TextColor3 = Color3.new(255/255,0/255,i/255)
+    end
+end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+local function PKIPWI_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', SUSHIT)
 
 	while true do
     script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
