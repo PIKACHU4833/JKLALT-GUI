@@ -1132,7 +1132,7 @@ end
 end
 coroutine.wrap(PKIPWI_fake_script)()
 local function PKIPWI_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', y00zTHEME)
+	local script = Instance.new('LocalScript', Y00zTHEME)
 
 	while true do
     script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
