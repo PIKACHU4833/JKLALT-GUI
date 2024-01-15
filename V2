@@ -66,7 +66,7 @@ IMAGE.BackgroundTransparency = 1
 IMAGE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 IMAGE.BorderSizePixel = 3
 IMAGE.Size = UDim2.new(0, 420, 0, 600)
-IMAGE.Image = "rbxassetid://15964603313"
+IMAGE.Image = "rbxassetid://15992351673"
 
 TextLabel2.Parent = Frame
 TextLabel2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
