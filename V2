@@ -19,21 +19,9 @@ local CHATALL = Instance.new("TextButton")
 local DECAL = Instance.new("TextButton")
 local JUMPSCARE = Instance.new("TextButton")
 local NEWFACE = Instance.new("TextButton")
-
--- Instances right:
-
 local Chicken = Instance.new("TextButton")
-
--- 1 More Instances :
-
 local meshdisco = Instance.new("TextButton")
-
--- Instances left:
-
 local MESSAGESPAM = Instance.new("TextButton")
-
--- 2 More Instances :
-
 local SUSHIT = Instance.new("TextButton")
 local FIREOUTSIDE = Instance.new("TextButton")
 local BALLRAINING = Instance.new("TextButton")
