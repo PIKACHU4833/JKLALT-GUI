@@ -628,13 +628,13 @@ Spooky = Instance.new("Sound", game.Workspace)
 		Spooky.Looped = true
 		Spooky:Play()
 end)
-IMAGE.Parent = SCROLLscript
-IMAGE.BackgroundColor3 = Color3.fromRGB(174, 167, 255)
-IMAGE.BackgroundTransparency = 1
-IMAGE.BorderColor3 = Color3.fromRGB(0, 0, 0)
-IMAGE.BorderSizePixel = 3
-IMAGE.Size = UDim2.new(0, 190, 0, 150)
-IMAGE.Image = "rbxassetid://15886422776"
+IMAGE2.Parent = SCROLLscript
+IMAGE2.BackgroundColor3 = Color3.fromRGB(174, 167, 255)
+IMAGE2.BackgroundTransparency = 1
+IMAGE2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IMAGE2.BorderSizePixel = 3
+IMAGE2.Size = UDim2.new(0, 270, 0, 230)
+IMAGE2.Image = "rbxassetid://15886422776"
 
 -- Script:
 
