@@ -270,7 +270,16 @@ DECAL.TextScaled = true
 DECAL.TextSize = 14.000
 DECAL.TextWrapped = true
 DECAL.MouseButton1Down:connect(function()
-		local ID = 15866619293
+s = Instance.new("Sky")
+		s.Name = "SKY"
+		s.SkyboxBk = "rbxassetid://0"
+		s.SkyboxDn = "rbxassetid://0"
+		s.SkyboxFt = "rbxassetid://0"
+		s.SkyboxLf = "rbxassetid://0"
+		s.SkyboxRt = "rbxassetid://0"
+                s.SkyboxUp = "rbxassetid://0"
+                s.Parent = game.Lighting
+		local ID = 15979737796
 		function spamDecal(v)
 			if v:IsA("Part") then
 				for i = 0, 5 do
