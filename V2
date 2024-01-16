@@ -28,6 +28,7 @@ local BALLRAINING = Instance.new("TextButton")
 local y00zTHEME = Instance.new("TextButton")
 local OLDTHEME = Instance.new("TextButton")
 local IMAGE2 = Instance.new("ImageLabel")
+local PARTICLES = Instance.new("TextButton")
 
 --Properties :
 
@@ -630,12 +631,54 @@ Spooky = Instance.new("Sound", game.Workspace)
 end)
 IMAGE2.Parent = SCROLLscript
 IMAGE2.BackgroundColor3 = Color3.fromRGB(174, 167, 255)
+IMAGE2.Position = UDim2.new(0, 0, 1, 0)
 IMAGE2.BackgroundTransparency = 1
 IMAGE2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 IMAGE2.BorderSizePixel = 3
 IMAGE2.Size = UDim2.new(0, 270, 0, 230)
 IMAGE2.Image = "rbxassetid://15886422776"
 
+PARTICLES.Parent = SCROLLscript
+PARTICLES.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PARTICLES.BorderColor3 = Color3.fromRGB(196, 40, 28)
+PARTICLES.BorderSizePixel = 3
+PARTICLES.Position = UDim2.new(0.08, 0, 3, 0)
+PARTICLES.Size = UDim2.new(0, 370, 0, 50)
+PARTICLES.Font = Enum.Font.SourceSans
+PARTICLES.Text = "y00nkidd JUMPING IS NOT A CRIME PARTICLES"
+PARTICLES.TextColor3 = Color3.fromRGB(242, 243, 243)
+PARTICLES.TextScaled = true
+PARTICLES.TextSize = 14.000
+PARTICLES.TextWrapped = true
+PARTICLES.MouseButton1Down:connect(function()
+local ID = 15964603313 -- Change your ID here fellas cXz (Image ID)
+ local particle = true
+
+-- Don’t change anything down below if you don’t know what are you doing [This script made by cXyzkidd]
+
+if particle == true then
+	for i,v in pairs (game.Workspace:GetChildren()) do
+		if v:IsA("Part") then
+			local particle = Instance.new("ParticleEmitter")
+			particle.Texture = "http://www.roblox.com/asset/?id=" ..ID
+			particle.Parent = v
+			particle.Rate = 200
+			for i,x in pairs (game.Workspace:GetChildren()) do
+				if x:IsA("Model") then
+					for i,z in pairs (x:GetChildren()) do
+						if z:IsA("Part") then
+							local particle2 = Instance.new("ParticleEmitter")
+							particle2.Texture = "http://www.roblox.com/asset/?id=" ..ID
+							particle2.Parent = z
+							particle2.Rate = 200
+						end
+					end
+				end
+			end
+		end
+	end
+end
+end)
 -- Script:
 
 local function QFCS_fake_script() -- Frame.Dragify 
